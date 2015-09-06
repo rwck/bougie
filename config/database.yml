@@ -24,10 +24,10 @@ test: &TEST
 production:
   adapter: postgresql
   encoding: utf8
-  database: project_production
+  database: d7u7s7ij2knir8
   pool: 5
-  username: 
-  password:
+  username: dtitefvqfxjqpu
+  password: BcCzwAb5DJYeINnLJBrICGItKq
 
 
 
