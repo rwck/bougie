@@ -52,3 +52,5 @@ end
 gem 'rails_12factor', group: :production
 ruby '2.2.3'
 gem 'puma'
+gem 'asset_sync'
+gem 'aws-sdk', '< 2.0'
