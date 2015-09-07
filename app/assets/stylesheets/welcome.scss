@@ -2,6 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+h1 {
+	font-family: 'Cardo', serif;
+}
+
 body {
-background-color: lightyellow;
+	margin: 0;
+	padding: 0;
+	background-color: lightyellow;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+	margin: auto;
+	width: 60%;
 }
