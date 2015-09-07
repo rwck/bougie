@@ -77,6 +77,8 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
   # config.action_controller.asset_host = "https://bougie.s3.amazonaws.com"
-  config.action_controller.asset_host = "dxqwgrrl8c7xk.cloudfront.net"
+  # config.action_controller.asset_host = "dxqwgrrl8c7xk.cloudfront.net"
+  config.action_controller.asset_host = "assets%d.bc-oz.com"
+
 
 end
