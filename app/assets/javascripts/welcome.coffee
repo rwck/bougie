@@ -2,7 +2,7 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
- function changeColor() {
+ -> changeColor() {
 
         var hue = Math.floor(Math.random() * 360);
 
@@ -45,6 +45,6 @@
 
     };
 
-    $(function() {
+    $(->() {
         changeColor();
     });
