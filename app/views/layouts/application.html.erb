@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>Bougie</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -9,10 +9,18 @@
   <link href='https://fonts.googleapis.com/css?family=Cardo:700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 
-</head>
 <body>
 
-	<div class="container">
+<div class="experimental" onClick="changeColor(); return false;">
+<p>
+Here is some text...
+</p>
+</div> <!-- experimental -->
+
+
+
+</body>
+</html>
 
 	<%= yield %>
 

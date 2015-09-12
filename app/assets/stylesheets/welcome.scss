@@ -23,3 +23,13 @@ body {
 	background-color: white;
 	width: 60%;
 }
+
+.experimental {
+    // background-color: hsla(180, 60%, 70%, 1);
+    background-color: hsla(180, 50%, 50%, 1);
+    padding: 12px;
+    margin: 24px;
+    border: 14px hsla(0, 50%, 50%, 1) solid;
+    border-radius: 14px;
+    // min-width: 100%;
+}
