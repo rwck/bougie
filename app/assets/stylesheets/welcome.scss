@@ -33,3 +33,268 @@ body {
     border-radius: 14px;
     // min-width: 100%;
 }
+
+
+.wrapper {
+    margin: 12px;
+    // float: left;
+}
+
+@media (max-width: 500px) {
+
+div {
+
+}
+
+img {
+    position: relative;
+    margin: 10px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-small;
+    color: black;
+    line-height: 14px;
+    background: url("../images/bwopera3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 24px;
+    margin: 10%;
+}
+
+.name {
+    padding: 24px;
+    float: right;
+    }
+
+
+.abouttext {
+    opacity: 0;
+    transition: opacity 3s;
+    -webkit-transition: opacity 3s;
+    -moz-transition: opacity 3s;
+    line-height: 24px;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    font-size: x-small;
+    padding: 12px;
+    }
+
+.moretext {
+    padding: 12px;
+    font-size: x-small;
+    background-color: black;
+    color: white;
+    line-height: 16px;
+    opacity: 0;
+    transition: opacity 3s;
+    -webkit-transition: opacity 3s;
+    -moz-transition: opacity 3s;
+    z-index: -1;
+    }
+
+.contact {
+    opacity: 0;
+    transition: opacity 3s;
+    -webkit-transition: opacity 3s;
+    -moz-transition: opacity 3s;
+    z-index: -1;
+    background-color: black;
+    color: white;
+    font-size: x-small;
+    padding: 12px;
+    }
+
+
+
+.picture {
+    max-width: 150px;
+    max-height: 150px;
+    margin: 24px;
+    opacity: 0;
+    transition: opacity 3s;
+    -webkit-transition: opacity 3s;
+    -moz-transition: opacity 3s;
+    z-index: -1;
+}
+
+.links {
+    font-size: x-small;
+    top: 40%;
+    opacity: 0;
+    transition: opacity 3s;
+    -webkit-transition: opacity 3s;
+    -moz-transition: opacity 3s;
+    line-height: 24px;
+    z-index: -1;
+    }
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.contactlink {
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.showpicture70 {
+    opacity: 0.7;
+    z-index: 0;
+    }
+
+
+.showdiv70 {
+    opacity: 0.7;
+    max-height: 100%;
+    max-width: 100%;
+    z-index: 0;
+    }
+
+.showdiv100 {
+    opacity: 0.5;
+    z-index: 0;
+    }
+}
+
+@media (min-width: 500px) { // this is for larger screens
+
+div {
+
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.picture {
+    max-width: 150px;
+    max-height: 150px;
+    margin: 12px;
+    opacity: 0;
+    transition: opacity 3s;
+    -webkit-transition: opacity 3s;
+    -moz-transition: opacity 3s;
+    z-index: -1;
+}
+
+// .wrapper {
+    // float: left;
+// }
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    // font-size: small;
+    color: black;
+    line-height: 14px;
+    background: url("../images/bwopera3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 24px;
+    margin: 10%;
+}
+
+.name {
+    padding: 24px;
+    float: right;
+    }
+
+.abouttext {
+    opacity: 0;
+    transition: opacity 3s;
+    -webkit-transition: opacity 3s;
+    -moz-transition: opacity 3s;
+    line-height: 24px;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    // font-size: small;
+    padding: 12px;
+    }
+
+.moretext {
+    padding: 12px;
+    // font-size: small;
+    background-color: black;
+    color: white;
+    line-height: 16px;
+    opacity: 0;
+    transition: opacity 3s;
+    -webkit-transition: opacity 3s;
+    -moz-transition: opacity 3s;
+    z-index: -1;
+    }
+
+.contact {
+    opacity: 0;
+    transition: opacity 3s;
+    -webkit-transition: opacity 3s;
+    -moz-transition: opacity 3s;
+    z-index: -1;
+    background-color: black;
+    color: white;
+    // font-size: small;
+    padding: 12px;
+    }
+
+
+.links {
+    // font-size: small;
+    top: 40%;
+    opacity: 0;
+    transition: opacity 3s;
+    -webkit-transition: opacity 3s;
+    -moz-transition: opacity 3s;
+    line-height: 24px;
+    z-index: -1;
+    }
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.contactlink {
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.showpicture70 {
+    opacity: 0.7;
+    z-index: 0;
+    }
+
+
+.showdiv70 {
+    opacity: 0.7;
+    max-height: 100%;
+    max-width: 100%;
+    z-index: 0;
+    }
+
+.showdiv100 {
+    opacity: 0.5;
+    z-index: 0;
+    }
+}
