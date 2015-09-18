@@ -26,7 +26,7 @@ function changeColor() {
 
        var saturation = 100;
        var lightness = 30;
-       var textLightness = lightness + 75;
+       var textLightness = lightness + 100;
        var opacity = .4;
 
        var hsla1 = "hsla("+hue+ ", " +saturation+ "%, " +lightness+ "%, " +opacity+ ")";
@@ -35,8 +35,11 @@ function changeColor() {
        var hsla4 = "hsla("+hue4+ ", " +saturation+ "%, " +lightness+ "%, " +opacity+ ")";
 
        $(".experimental").css("background-color", hsla1);
-       $(".experimental").css("border", "solid 6px "+hsla2);
-       $(".experimental").css("color", hsla3); // "solid 14px "+hsla2);
+       // $(".experimental").css("border", "solid 2px "+hsla2);
+       //$(".experimental").css("color", hsla3); // "solid 14px "+hsla2);
+       // $(".experimental").css("color", hsla3); // "solid 14px "+hsla2);
+       // $(".experimental").css("box-shadow", 0px 0px 0px 0px); // rgba(0,0,0,0.50);
+
        // $(".experimental").css("border", "solid 14px "+hsla2);
        // alert(hsla1, hsla2, hsla3, hsla4);
 
