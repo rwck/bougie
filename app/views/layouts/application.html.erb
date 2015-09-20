@@ -11,14 +11,14 @@
 
 <body>
 
-	<div class="container">
+	<div class="container" onmousedown="mouseDown();" onmouseup="mouseUp();">
 
 	<%= yield %>
 
 	</div>
 
 
-	<div class="experimental" onClick="changeColor(); return false;">
+	<div class="experimental" onmousedown="mouseDown();" onmouseup="mouseUp();" onclick="changeColor();">
 	<p>
 	Here is some text...
 	</p>
@@ -31,4 +31,6 @@ $(function() {
         changeColor();
     });
 </script>
+
+
 </html>
