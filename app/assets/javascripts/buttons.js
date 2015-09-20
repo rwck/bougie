@@ -6,6 +6,6 @@ function mouseDown() {
 
 function mouseUp() {
   $(".experimental").css({
-    'box-shadow': '1px 2px 4px 0px rgba(0,0,0,0.50)',
+    'box-shadow': '1px 2px 4px 0px rgba(0,0,0,0.50)', 
   });
 };
