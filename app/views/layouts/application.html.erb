@@ -11,18 +11,33 @@
 
 <body>
 
-	<div class="container">
+	<div class="container" onmousedown="pressDown(this);" onmouseup="pressUp(this);" ontouchstart="pressDown(this);" touchend="pressUp(this);">
 
 	<%= yield %>
 
 	</div>
 
 
-	<div class="experimental" onmousedown="pressDown();" onmouseup="pressUp();" ontouchstart="pressDown();" touchend="pressUp();" onclick="changeColor();">
+	<div class="experimental" onmousedown="pressDown(this);" onmouseup="pressUp(this);" ontouchstart="pressDown(this);" touchend="pressUp(this);" onclick="changeColor(this);">
 	<p>
-	Here is some text...
+	This is the primary colour
 	</p>
 	</div> <!-- experimental -->
+	<div class="experimental2">
+	<p>
+	This is the complement
+	</p>
+	</div>
+	<div class="experimental3">
+	<p>
+	This is the first triad
+	</p>
+	</div>
+	<div class="experimental4">
+	<p>
+	And this is the second triad
+	</p>
+	</div>
 
 </body>
 
