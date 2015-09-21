@@ -25,11 +25,18 @@ function changeColor() {
   //   var hue4 = hue + 225; // this maths could be wrong
   // }
 
-  var saturation = 50;
+  var saturation = 70;
   var lightness = 50;
-  var opacity = 1;
-  var textLightness = lightness + 100;
-  var textOpacity = opacity * 2.5
+  var opacity = 0.3;
+  var textLightness;
+  if (lightness >= 50 || opacity < 0.3) {
+    textLightness = lightness - 75;
+  }
+  else if (lightness < 50) {
+    textLightness = lightness + 75;
+  }
+  // var textLightness = lightness - 100;
+  var textOpacity = opacity + 0.8;
 
 
   var hsla1 = "hsla("+hue+ ", " +saturation+ "%, " +lightness+ "%, " +opacity+ ")";
