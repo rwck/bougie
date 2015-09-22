@@ -17,6 +17,8 @@
 	// border-width: 2px;
 	background-color: hsla(180, 180, 180, 1);
 	box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.50);
+	// box-shadow: 4px 4px 12px 4px rgba(0,0,0,0.50);
+
 	width: 80%;
 }
 
@@ -45,11 +47,14 @@ body {
 
 		// margin: 0, auto;
 		// border: 14px hsla(0, 50%, 50%, 1) solid;
-		border: 0px solid #979797;
+		// border: 0px solid #979797;
 		box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.50);
-    // border-radius: 14px;
+		// box-shadow: 4px 4px 12px 4px rgba(0,0,0,0.50);
+
+		// border-radius: 14px;
 		width: 80%;
 		color: hsla(180, 180, 180, 0.8);
+		cursor: default;
     // min-width: 100%;
 }
 
@@ -67,6 +72,7 @@ body {
 
 .button-up {
 	box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.50);
+	// box-shadow: 4px 4px 12px 4px rgba(0,0,0,0.50);
 }
 
 .button-down {
@@ -88,7 +94,6 @@ body {
 .experimental {
 	width: 60%;
 }
-
 }
 
 

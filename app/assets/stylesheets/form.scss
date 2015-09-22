@@ -1,0 +1,23 @@
+
+.forms {
+	//background-color: yellow;
+  font-size: 1em;
+  font-weight: bolder;
+  padding: 1em;
+  line-height: 1.5em;
+  // font-style: italic;
+  // ßborder: 1px, solid, black;
+
+input {
+  display: block;
+  border: 1px solid black;
+  height: 2em; //25px;
+  padding: 0.25em;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 1em;
+  font-style: italic;
+  box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.50);
+}
+
+}
