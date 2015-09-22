@@ -39,11 +39,75 @@
 	</p>
 	</div>
 
+
+
+
+<div class="container" onmousedown="pressDown(this);" onmouseup="pressUp(this);" ontouchstart="pressDown(this);" touchend="pressUp(this);" onclick="getColor()">
+	<p>Fill in the form below to generate your own colour profile</p>
+	<form id="frm1" action="submit" class="forms">
+		Hue (0-360): <input type="number" name="hue"><br>
+	  Saturation (0-100): <input type="number" name="saturation"><br>
+	  Lightness (0-100): <input type="number" name="lightness"><br>
+		Opacity (0-100): <input type="number" name="opacity"><br>
+
+		<!-- <input type="button" onclick="getColor()" value="Submit"> -->
+	</form>
+</div>
+
+<!--
+<div class="container">
+	<p id="yaroo">
+	</p>
+</div>
+-->
+
+
+<br>
+<br>
+
 </body>
 
 <script type="text/javascript">
-$(function() {
-        changeColor();
-    });
+// $(function() {
+//         changeColor();
+//     });
+
+changeColor();
+// getColor();
+
+// function getInput() {
+// 	var hue = document.getElementsByName("saturation")[0].value;
+// 	var saturation = document.getElementsByName("saturation")[0].value;
+// 	var lightness = document.getElementsByName("saturation")[0].value;
+// 	var opacity = document.getElementsByName("saturation")[0].value;
+// 	var hsla = [saturation, lightness, opacity];
+// 	alert(hsla);
+// };
+
+
 </script>
 </html>
+
+
+<!--
+	// var x = document.getElementById("frm1");
+	// var i;
+	// var input = [];
+	// for (i = 0; i < x.length-1; i++) {
+	// 	input.push(x.elements[i].value);
+	// }
+	// var newInput = [document.getElementById("frm1").elements.value]
+	// alert(newInput);
+
+
+	// alert(input);
+
+	// var text = "";
+	// var i;
+	// for (i = 0; i < x.length; i++) {
+	// 	text += x.elements[i].value + "<br>";
+	// }
+	// document.getElementById("yaroo").innerHTML = text;
+	// confirm("You've clicked the button: this is a start!!");
+	// alert(frm1[1]);
+-->

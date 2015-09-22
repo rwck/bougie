@@ -84,10 +84,21 @@ function changeColor() {
     // $(".experimental").css("border", "solid 14px "+hsla2);
 
     // This gives a useful alert as to what colours are being pumped out.
-    //alert([hsla1, hsla2, hsla3, hsla4]);
+    return([hsla1, hsla2, hsla3, hsla4]); 
 
 };
 
 $(function() {
   changeColor();
 });
+
+
+
+// function getInput() {
+//   var1 = document.getElementById("frm1").submit();
+//   alert("You entered: "var1);
+// };
+//
+// $function() {
+//   getInput();
+// });
