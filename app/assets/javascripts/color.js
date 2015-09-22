@@ -1,3 +1,5 @@
+var hue, hue2, hue3, hue4
+
 function changeColor() {
   var hue = Math.floor(Math.random() * 360);
 
@@ -77,14 +79,16 @@ function changeColor() {
     // }"background-color", hsla1);
     //   // "box-shadow": 0 0 0 0;
     // $(".experimental").css("border", "solid 2px "+hsla2);
-    $(".experimental").css("color", hsla301); // "solid 14px "+hsla2);
+    // $(".experimental").css("color", hsla301); // "solid 14px "+hsla2);
     // $(".experimental").css("color", hsla3); // "solid 14px "+hsla2);
     // $(".experimental").css("box-shadow", 0px 0px 0px 0px); // rgba(0,0,0,0.50);
 
     // $(".experimental").css("border", "solid 14px "+hsla2);
 
     // This gives a useful alert as to what colours are being pumped out.
-    return([hsla1, hsla2, hsla3, hsla4]); 
+
+    // return([hsla1, hsla2, hsla3, hsla4]);
+    // alert(hue);
 
 };
 

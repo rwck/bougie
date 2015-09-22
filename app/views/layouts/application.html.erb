@@ -20,22 +20,27 @@
 
 	<div class="experimental" onmousedown="pressDown(this);" onmouseup="pressUp(this);" ontouchstart="pressDown(this);" touchend="pressUp(this);" onclick="changeColor(this);">
 	<p>
-	This is the primary colour
+	This is the primary colour...
+	<!--
+	<script type="text/javascript">
+	document.write(hue)
+	</script>
+	-->
 	</p>
 	</div> <!-- experimental -->
 	<div class="experimental2">
 	<p>
-	This is the complement
+	...this is the complement...
 	</p>
 	</div>
 	<div class="experimental3" display="block">
 	<p>
-	This is the first triad
+	...this is the first triad...
 	</p>
 	</div>
 	<div class="experimental4" display="block">
 	<p>
-	And this is the second triad
+	...and this is the second triad.
 	</p>
 	</div>
 
@@ -46,9 +51,9 @@
 	<p>Fill in the form below to generate your own colour profile</p>
 	<form id="frm1" action="submit" class="forms">
 		Hue (0-360): <input type="number" name="hue"><br>
-	  Saturation (0-100): <input type="number" name="saturation"><br>
-	  Lightness (0-100): <input type="number" name="lightness"><br>
-		Opacity (0-100): <input type="number" name="opacity"><br>
+	  Saturation (0-100): <input type="number" name="saturation" value=100><br>
+	  Lightness (0-100): <input type="number" name="lightness" value=50><br>
+		Opacity (0-100): <input type="number" name="opacity" value=100><br>
 
 		<!-- <input type="button" onclick="getColor()" value="Submit"> -->
 	</form>
