@@ -7,7 +7,9 @@
   </p>
   <br>
 
-  <%= link_to 'My Blog', controller: 'articles' %>
+  <%= link_to 'Home', { controller: 'welcome' }, class: "menu" %>
+  <%= link_to 'My Blog', { controller: 'articles' }, class: "menu" %>
+
 
 	</div>
 
@@ -42,12 +44,12 @@
 
 
 <div class="container" onmousedown="pressDown(this);" onmouseup="pressUp(this);" ontouchstart="pressDown(this);" touchend="pressUp(this);" onclick="getColor();">
-	<p>Fill in the form below to generate your own colour profile</p>
+	<p>Play with the sliders below to generate your own colour profile</p>
 	<form id="frm1" action="submit" class="forms">
-		Hue (0-360): <input type="range" name="hue"><br>
+		Hue (0-360): <input type="range" min=0 max=360 name="hue"><br>
 	  Saturation (0-100): <input type="range" min=0 max=100 name="saturation"><br>
-	  Lightness (0-100): <input type="range" name="lightness"><br>
-		Opacity (0-100): <input type="range" name="opacity"><br>
+	  Lightness (0-100): <input type="range" min=0 max=100 name="lightness"><br>
+		Opacity (0-100): <input type="range" min=0 max=100 name="opacity"><br>
 
 		<!-- <input type="button" onclick="getColor()" value="Submit"> -->
 	</form>

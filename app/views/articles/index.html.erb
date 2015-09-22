@@ -2,9 +2,29 @@
 
 <h1>Recent articles</h1>
 
-<%= link_to 'New article', new_article_path %>
+<%= link_to 'New article', new_article_path, class: "menu" %>
 
 
+
+
+<% @articles.each do |article| %>
+<div>
+<div class="show_article_title">
+<%= article.title %>
+</div>
+
+<div class="show_articles">
+<%= article.text %>
+</div>
+</div>
+<div class="show_article_menu">
+  <%= link_to 'Show', article_path(article) %>
+  <%= link_to 'Edit', edit_article_path(article) %>
+  <%= link_to 'Home', controller: 'welcome' %>
+</div>
+<% end %>
+
+<!--
 <table>
   <tr>
     <th>Title</th>
@@ -21,7 +41,7 @@
       <td><%= link_to 'Home', controller: 'welcome' %></td>
     </tr>
   <% end %>
-</table>
+</table> -->
 
 
 </div>

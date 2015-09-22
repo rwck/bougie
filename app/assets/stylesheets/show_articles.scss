@@ -1,0 +1,23 @@
+.show_articles {
+  margin-top: 2%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2%;
+	background-color: hsla(180, 180, 180, 1);
+	box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.50);
+	width: 60%;
+  display: inline-grid;
+  text-overflow: ellipsis;
+}
+
+.show_article_title {
+  @extend .show_articles;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+.show_article_menu {
+  @extend .show_articles;
+  text-align: right;
+
+}

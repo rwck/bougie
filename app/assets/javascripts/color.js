@@ -125,6 +125,7 @@ function changeColor() {
     // alert(hue);
     // return hue;
 
+    // alert([hue, hue2, hue3, hue4])
 };
 
 $(function() {
