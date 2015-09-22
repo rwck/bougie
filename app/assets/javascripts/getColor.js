@@ -24,7 +24,7 @@ function getColor() {
 
   // alert(hsla);
   // return hsla;
-  hue = parseInt(hue);
+  // hue = parseInt(hue);
   hue2 = hue + 180;
   hue3 = hue + 135;
   hue4 = hue + 225;
@@ -55,6 +55,6 @@ function getColor() {
       'color': hsla301,
     });
 
-    alert([hue, hue2, hue3, hue4]);
-    alert([hsla1, hsla2]);
+    // alert([hue, hue2, hue3, hue4]);
+    // alert([hsla1, hsla2]);
 };
