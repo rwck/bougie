@@ -30,15 +30,24 @@ function changeColor() {
   //   var hue4 = hue + 225; // this maths could be wrong
   // }
 
-  var saturation = 70;
-  var lightness = 50;
-  var opacity = 0.3;
+
+  var saturation = Math.random() * ((0.8 - 0.2) + 0.2) * 100;
+  // var saturation = Math.floor(Math.random() * ((0.8 - 0.2) + 0.2) * 100;
+  var lightness = Math.random() * ((0.8 - 0.2) + 0.2) * 100;
+  // var lightness = Math.floor(Math.random() * ((0.8 - 0.2) + 0.2) * 100;
+  var opacity = Math.random() * (0.8 - 0.2) + 0.2;
+
+// Math.floor
+
+  // var saturation = 70;
+  // var lightness = 50;
+  // var opacity = 0.3;
   var textLightness;
   if (lightness >= 50 || opacity < 0.3) {
-    textLightness = lightness - 75;
+    textLightness = lightness - 100;
   }
   else if (lightness < 50) {
-    textLightness = lightness + 75;
+    textLightness = lightness + 100;
   }
   // var textLightness = lightness - 100;
   var textOpacity = opacity + 0.8;
