@@ -1,15 +1,17 @@
-<h1>Listing articles</h1>
+<div class="container" onmousedown="pressDown(this);" onmouseup="pressUp(this);" ontouchstart="pressDown(this);" touchend="pressUp(this);">
+
+<h1>Recent articles</h1>
 
 <%= link_to 'New article', new_article_path %>
 
- 
+
 <table>
   <tr>
     <th>Title</th>
     <th>Text</th>
     <th colspan="2"></th>
   </tr>
- 
+
   <% @articles.each do |article| %>
     <tr>
       <td><%= article.title %></td>
@@ -20,3 +22,6 @@
     </tr>
   <% end %>
 </table>
+
+
+</div>

@@ -1,6 +1,9 @@
 var hue, hue2, hue3, hue4
 
 function changeColor() {
+  // alert(div.outerHTML);
+  // myClass = div.className;
+  myClass = "experimental"
   var hue = Math.floor(Math.random() * 360);
 
   var hue2 = hue + 180
@@ -55,26 +58,48 @@ function changeColor() {
   // });
     // $(".experimental").css("box-shadow", 0 0 0 0);
     // $(".experimental").css("background-color", hsla1);
-    $(".experimental").css({
+
+    $("."+myClass).css({
       'background-color': hsla1,
       'color': hsla301,
     });
 
-    $(".experimental2").css({
+    $("."+myClass+"2").css({
         'background-color': hsla2,
         'color': hsla301,
     });
 
-    $(".experimental3").css({
+    $("."+myClass+"3").css({
         'background-color': hsla3,
         'color': hsla301,
     });
 
-    $(".experimental4").css({
+    $("."+myClass+"4").css({
       'background-color': hsla4,
       'color': hsla301,
     });
-      //'box-shadow': "0 0 0 0",
+
+
+    // $(".experimental").css({
+    //   'background-color': hsla1,
+    //   'color': hsla301,
+    // });
+    //
+    // $(".experimental2").css({
+    //     'background-color': hsla2,
+    //     'color': hsla301,
+    // });
+    //
+    // $(".experimental3").css({
+    //     'background-color': hsla3,
+    //     'color': hsla301,
+    // });
+    //
+    // $(".experimental4").css({
+    //   'background-color': hsla4,
+    //   'color': hsla301,
+    // });
+    //   //'box-shadow': "0 0 0 0",
 
     // }"background-color", hsla1);
     //   // "box-shadow": 0 0 0 0;
@@ -89,6 +114,7 @@ function changeColor() {
 
     // return([hsla1, hsla2, hsla3, hsla4]);
     // alert(hue);
+    // return hue;
 
 };
 

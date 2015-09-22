@@ -10,10 +10,11 @@
 
 input {
   display: block;
-  border: none;
+  border: 1px solid black;
   height: 2em; //25px;
   padding: 0.25em;
   padding-left: 1em;
+  padding-right: 1em;
   font-size: 1em;
   font-style: italic;
   box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.50);

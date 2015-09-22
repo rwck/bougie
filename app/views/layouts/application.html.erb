@@ -10,87 +10,18 @@
   <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 
 <body>
-
+	<!--
 	<div class="container" onmousedown="pressDown(this);" onmouseup="pressUp(this);" ontouchstart="pressDown(this);" touchend="pressUp(this);">
+	-->
 
 	<%= yield %>
 
-	</div>
-
-
-	<div class="experimental" onmousedown="pressDown(this);" onmouseup="pressUp(this);" ontouchstart="pressDown(this);" touchend="pressUp(this);" onclick="changeColor(this);">
-	<p>
-	This is the primary colour...
 	<!--
-	<script type="text/javascript">
-	document.write(hue)
-	</script>
+	</div>
 	-->
-	</p>
-	</div> <!-- experimental -->
-	<div class="experimental2">
-	<p>
-	...this is the complement...
-	</p>
-	</div>
-	<div class="experimental3" display="block">
-	<p>
-	...this is the first triad...
-	</p>
-	</div>
-	<div class="experimental4" display="block">
-	<p>
-	...and this is the second triad.
-	</p>
-	</div>
-
-
-
-
-<div class="container" onmousedown="pressDown(this);" onmouseup="pressUp(this);" ontouchstart="pressDown(this);" touchend="pressUp(this);" onclick="getColor()">
-	<p>Fill in the form below to generate your own colour profile</p>
-	<form id="frm1" action="submit" class="forms">
-		Hue (0-360): <input type="number" name="hue"><br>
-	  Saturation (0-100): <input type="number" name="saturation" value=100><br>
-	  Lightness (0-100): <input type="number" name="lightness" value=50><br>
-		Opacity (0-100): <input type="number" name="opacity" value=100><br>
-
-		<!-- <input type="button" onclick="getColor()" value="Submit"> -->
-	</form>
-</div>
-
-<!--
-<div class="container">
-	<p id="yaroo">
-	</p>
-</div>
--->
-
-
-<br>
-<br>
 
 </body>
 
-<script type="text/javascript">
-// $(function() {
-//         changeColor();
-//     });
-
-changeColor();
-// getColor();
-
-// function getInput() {
-// 	var hue = document.getElementsByName("saturation")[0].value;
-// 	var saturation = document.getElementsByName("saturation")[0].value;
-// 	var lightness = document.getElementsByName("saturation")[0].value;
-// 	var opacity = document.getElementsByName("saturation")[0].value;
-// 	var hsla = [saturation, lightness, opacity];
-// 	alert(hsla);
-// };
-
-
-</script>
 </html>
 
 
