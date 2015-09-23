@@ -17,11 +17,8 @@
 	<div class="experimental" onmousedown="pressDown(this);" onmouseup="pressUp(this);" ontouchstart="pressDown(this);" touchend="pressUp(this);" onclick="changeColor(this);">
 	<p>
 	This is the primary colour...
-	<!--
-	<script type="text/javascript">
-	document.write(hue)
-	</script>
-	-->
+  <span class="bazoo"></span>
+
 	</p>
 	</div> <!-- experimental -->
 	<div class="experimental2">
@@ -37,7 +34,12 @@
 	<div class="experimental4" display="block">
 	<p>
 	...and this is the second triad.
-	</p>
+<!--
+  <script type="text/javascript">
+  document.write([colour1, colour2, colour3, colour4])
+  </script> -->
+
+  </p>
 	</div>
 
 
@@ -53,37 +55,24 @@
 
 		<!-- <input type="button" onclick="getColor()" value="Submit"> -->
 	</form>
+  <div class="container">
+  	<p id="yaroo">
+      <script>
+        printColor();
+      </script>
+      <!-- <script>
+      printValues();
+      </script> -->
+  	</p>
+  </div>
 </div>
 
-<!--
-<div class="container">
-	<p id="yaroo">
-	</p>
-</div>
--->
+
+
+
 
 
 <br>
 <br>
 
 </body>
-
-<script type="text/javascript">
-// $(function() {
-//         changeColor();
-//     });
-
-changeColor();
-// getColor();
-
-// function getInput() {
-// 	var hue = document.getElementsByName("saturation")[0].value;
-// 	var saturation = document.getElementsByName("saturation")[0].value;
-// 	var lightness = document.getElementsByName("saturation")[0].value;
-// 	var opacity = document.getElementsByName("saturation")[0].value;
-// 	var hsla = [saturation, lightness, opacity];
-// 	alert(hsla);
-// };
-
-
-</script>

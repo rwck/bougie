@@ -1,14 +1,14 @@
-var hue, hue2, hue3, hue4
+// var colour1, colour2, colour3, colour4;
+// var hue, hue2, hue3, hue4;
 
 function changeColor() {
   // alert(div.outerHTML);
   // myClass = div.className;
-  myClass = "experimental"
-  var hue = Math.floor(Math.random() * 360);
-
-  var hue2 = hue + 180
-  var hue3 = hue + 135
-  var hue4 = hue + 225
+  var myClass = "experimental"
+  hue = Math.floor(Math.random() * 360);
+  hue2 = hue + 180
+  hue3 = hue + 135
+  hue4 = hue + 225
 
   // if (hue >= 180) {
   //   var hue2 = hue - 180;
@@ -124,21 +124,19 @@ function changeColor() {
     // return([hsla1, hsla2, hsla3, hsla4]);
     // alert(hue);
     // return hue;
-
-    // alert([hue, hue2, hue3, hue4])
-};
+    colour1 = hue;
+    colour2 = hue2;
+    colour3 = hue3;
+    colour4 = hue4;
+    // alert([colour1, colour2, colour3, colour4]);
+    // return [colour1, colour2, colour3, colour4];
+    var contents = document.getElementsByClassName("bazoo");
+    // contents[0].innerHTML += colour1;
+    // alert(contents[0].innerHTML);
+    // contents[0].innerHTML += [colour1, colour2, colour3, colour4];
+    contents[0].innerHTML = [hue.toFixed(2), saturation.toFixed(2), lightness.toFixed(2), opacity.toFixed(2)*100];
+}
 
 $(function() {
   changeColor();
 });
-
-
-
-// function getInput() {
-//   var1 = document.getElementById("frm1").submit();
-//   alert("You entered: "var1);
-// };
-//
-// $function() {
-//   getInput();
-// });

@@ -1,6 +1,3 @@
-var hue, saturation, lightness, opacity, textLightness, textOpacity, hsla,
-  hsla1, hsla2, hsla3, hsla4, hue, hue2, hue3, hue4
-
 function getColor() {
   // alert("Kaboom!")
 
@@ -54,7 +51,7 @@ function getColor() {
       'background-color': hsla4,
       'color': hsla301,
     });
-
-    // alert([hue, hue2, hue3, hue4]);
     // alert([hsla1, hsla2]);
+    nob = "nob";
+    printcolor1 = hue.toString();
 };
