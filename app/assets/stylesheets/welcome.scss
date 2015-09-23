@@ -32,47 +32,32 @@ h1 {
 }
 
 body {
-	margin: 0;
-	padding: 0;
+	// margin: 0;
+	// padding-bottom: 0;
 	background-color: white;
 	font-family: 'Josefin Sans', sans-serif;
 
 }
 
 .experimental {
-    // background-color: hsla(180, 60%, 70%, 1);
-    // background-color: hsla(180, 50%, 50%, 1);
-    // padding: 12px;
 		padding: 2%;
-    // margin: 24px;
 		margin: 2%;
 		margin-top: 2%;
+		margin-bottom: 2%;
 		margin-left: auto;
 		margin-right: auto;
-
-		// margin: 0, auto;
-		// border: 14px hsla(0, 50%, 50%, 1) solid;
-		// border: 0px solid #979797;
 		box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.50);
-		// box-shadow: 4px 4px 12px 4px rgba(0,0,0,0.50);
-
-		// border-radius: 14px;
 		width: 80%;
 		color: hsla(180, 180, 180, 0.8);
 		cursor: default;
-    // min-width: 100%;
 }
 
-.experimental2 {
-@extend .experimental;
+.experimental2, .experimental3, .experimental4, .experimental5 {
+	@extend .experimental;
 }
 
-.experimental3 {
-@extend .experimental;
-}
-
-.experimental4 {
-@extend .experimental;
+.experimental5 {
+	color: black;
 }
 
 .button-up {

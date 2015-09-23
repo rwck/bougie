@@ -1,3 +1,33 @@
 // Place all the styles related to the widget controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.bazoo {
+  display: inline;
+  float: right;
+}
+.bazoo2, .bazoo3, .bazoo4, {
+  @extend .bazoo;
+}
+.nuggin {
+  // display: inline;
+  // float: right;
+  // font-style: italic;
+  // font-weight: bolder;
+  // padding: 20%;
+  // margin-right: auto;
+  // position: relative;
+  // float: right;
+}
+
+.dastardly {
+  font-weight: bold;
+  font-size: 1.5em;
+  // float: right;
+  // line-height: 2em;
+  //padding: 2%;
+}
+
+// .bazoo5 {
+//   font-weight: bolder;
+// }

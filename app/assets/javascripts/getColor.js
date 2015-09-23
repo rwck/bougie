@@ -1,3 +1,6 @@
+var saturation, lightness, opacity, printSat
+var colour1, colour2, colour3, colour4
+
 function getColor() {
   // alert("Kaboom!")
 
@@ -16,7 +19,7 @@ function getColor() {
     textLightness = lightness + 75;
   }
 
-  textOpacity = opacity + 0.8;
+  textOpacity = opacity + 0.8; // make the text more opaque so it's legible
 
 
   // alert(hsla);
@@ -51,7 +54,42 @@ function getColor() {
       'background-color': hsla4,
       'color': hsla301,
     });
-    // alert([hsla1, hsla2]);
-    nob = "nob";
-    printcolor1 = hue.toString();
+
+    colour1 = roundUp(hue);
+    colour2 = roundUp(hue2);
+    colour3 = roundUp(hue3);
+    colour4 = roundUp(hue4);
+
+    if (colour1 > 360) {
+      colour1 -= 360;
+    }
+    if (colour2 > 360) {
+      colour2 -= 360;
+    }
+    if (colour3 > 360) {
+      colour3 -= 360;
+    }
+    if (colour4 > 360) {
+      colour4 -= 360;
+    }
+
+    saturation = parseInt(saturation);
+    lightness = parseInt(lightness);
+    // opacity = parseInt(opacity);
+
+    printHue();
+    printTheRest();
+
+
+    console.log(typeof(saturation));
+
+    // printColor();
+    // printHue(b);
+    // console.log(col);
+
+    // var contents = document.getElementsByClassName("bazoo");
+    // // contents[0].innerHTML += colour1;
+    // // alert(contents[0].innerHTML);
+    // // contents[0].innerHTML += [colour1, colour2, colour3, colour4];
+    // contents[0].innerHTML = "Your colours are: " + [colour1, colour2, colour3, colour4];
 };

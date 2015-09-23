@@ -1,4 +1,5 @@
-// var colour1, colour2, colour3, colour4;
+var colour1, colour2, colour3, colour4
+var saturation, lightness, opacity, printSat
 // var hue, hue2, hue3, hue4;
 
 function changeColor() {
@@ -31,17 +32,13 @@ function changeColor() {
   // }
 
 
-  var saturation = Math.random() * ((0.8 - 0.2) + 0.2) * 100;
+  saturation = Math.random() * ((0.8 - 0.2) + 0.2) * 100;
   // var saturation = Math.floor(Math.random() * ((0.8 - 0.2) + 0.2) * 100;
-  var lightness = Math.random() * ((0.8 - 0.2) + 0.2) * 100;
+  lightness = Math.random() * ((0.8 - 0.2) + 0.2) * 100;
   // var lightness = Math.floor(Math.random() * ((0.8 - 0.2) + 0.2) * 100;
-  var opacity = Math.random() * (0.8 - 0.2) + 0.2;
+  opacity = Math.random() * (0.8 - 0.2) + 0.2;
 
-// Math.floor
 
-  // var saturation = 70;
-  // var lightness = 50;
-  // var opacity = 0.3;
   var textLightness;
   if (lightness >= 50 || opacity < 0.3) {
     textLightness = lightness - 100;
@@ -124,19 +121,38 @@ function changeColor() {
     // return([hsla1, hsla2, hsla3, hsla4]);
     // alert(hue);
     // return hue;
-    colour1 = hue;
-    colour2 = hue2;
-    colour3 = hue3;
-    colour4 = hue4;
-    // alert([colour1, colour2, colour3, colour4]);
-    // return [colour1, colour2, colour3, colour4];
-    var contents = document.getElementsByClassName("bazoo");
-    // contents[0].innerHTML += colour1;
-    // alert(contents[0].innerHTML);
-    // contents[0].innerHTML += [colour1, colour2, colour3, colour4];
-    contents[0].innerHTML = [hue.toFixed(2), saturation.toFixed(2), lightness.toFixed(2), opacity.toFixed(2)*100];
+
+    colour1 = roundUp(hue);
+    colour2 = roundUp(hue2);
+    colour3 = roundUp(hue3);
+    colour4 = roundUp(hue4);
+
+    if (colour1 > 360) {
+      colour1 -= 360;
+    }
+    if (colour2 > 360) {
+      colour2 -= 360;
+    }
+    if (colour3 > 360) {
+      colour3 -= 360;
+    }
+    if (colour4 > 360) {
+      colour4 -= 360;
+    }
+
+    saturation = parseInt(saturation);
+    lightness = parseInt(lightness);
+    // opacity = parseInt(opacity);
+
+    printHue();
+    printTheRest();
+    // console.log(saturation);
+
 }
 
-$(function() {
-  changeColor();
-});
+
+
+
+// $(function() {
+//   changeColor();
+// });
