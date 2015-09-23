@@ -38,14 +38,11 @@ function printTheRest() {
     "<span class='dastardly'> Opacity: " + opac + "</span>"
     "</span>";
 
-    contents[1].innerHTML=
-      "<span class='nuggin'>" +
-      "<span class='dastardly'> Main hue: " + hue + "</span><br>" +
-      "<span class='dastardly'> Saturation: " + sat + "</span><br>" +
-      "<span class='dastardly'> Lightness: " + light + "</span><br>" +
-      "<span class='dastardly'> Opacity: " + opac + "</span>"
-      "</span>";
-
-
-
+    // contents[1].innerHTML=
+    //   "<span class='nuggin'>" +
+    //   "<span class='dastardly'> Main hue: " + hue + "</span><br>" +
+    //   "<span class='dastardly'> Saturation: " + sat + "</span><br>" +
+    //   "<span class='dastardly'> Lightness: " + light + "</span><br>" +
+    //   "<span class='dastardly'> Opacity: " + opac + "</span>"
+    //   "</span>";
 }

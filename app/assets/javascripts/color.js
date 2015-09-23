@@ -147,7 +147,6 @@ function changeColor() {
     printHue();
     printTheRest();
     // console.log(saturation);
-
 }
 
 
