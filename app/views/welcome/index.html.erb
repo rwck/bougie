@@ -5,5 +5,13 @@
 <p>The whole point of doing this is to test deploying an app to Heroku.</p>
 <%= link_to 'My Blog', { controller: 'articles' }, class: "menu" %>
 <%= link_to 'Widget', { controller: 'widget' }, class: "menu" %>
-
+</div>
+<div class="container">
+  <label>Name: </label>
+  <input type="text" ng-model="yourName" placeholder="Enter your name here" class="forms">
+  <hr>
+  <h2>Hi there {{yourName}}!</h2>
+  <p>
+    Your name is {{yourName.length}} characters long.
+  </p>
 </div>
